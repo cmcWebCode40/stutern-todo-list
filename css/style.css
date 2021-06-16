@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #1bd3c6;
+  --bg-color: #041030ee;
+  --text-color: #fff;
+  --text-light: rgb(228, 228, 228);
+  --table-hover: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Livvic" sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 9px 45px;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border: var(--primary-color) 1px solid;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #000;
+  font-size: 1.2rem;
+}
+input[type="submit"]:hover {
+  background: #c47e16;
+  color: #000;
+}
+i {
+  color: var(--primary-color);
+}
+.set {
+  border-radius: 7px;
+  padding: 15px;
+}
+
+table {
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+
+table thead {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+tbody tr {
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+
+td {
+  padding: 5px 20px;
+  text-align: center;
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  max-width: 125px;
+  word-wrap: break-word;
+}
+table td:hover {
+  background: var(--text-color);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 400px;
+  }
+
+  .row {
+    margin: auto;
+  }
+}
